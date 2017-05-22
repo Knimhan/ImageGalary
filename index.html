@@ -15,15 +15,20 @@
       <h2 class="text-center">Image Slider</h2>
   </div>
   <div class="row top-buffer">
-      <div class="col-md-3">
-        <a class="pull-left prev" onclick="prev()">&#10094; Prev</a>
+      <div class="col-xs-3">
+        <div class="pull-left">
+          <a class="prev" onclick="prev()">&#10094; Prev</a>
+        </div>
       </div>
-      <div class="col-md-6">
-        <img name="image"  onload="setPageNo()"/>
-
+      <div class="col-xs-6">
+        <div class="wrapper">
+          <img name="image"  class="img-responsive" onload="setPageNo()"/>
+        </div>
       </div>
-      <div class="col-md-3">
-        <a class="pull-right next" onclick="next()">Next &#10095;</a>
+      <div class="col-xs-3">
+        <div class="pull-right">
+          <a class="next" onclick="next()">Next &#10095;</a>
+        </div>
       </div>
   </div>
 
